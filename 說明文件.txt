@@ -1,0 +1,39 @@
+1.一開始先印出"Please input entry(entry > 0):"，讓使用者指定entry數量
+
+2.接著依照entry數量建立預測器，用vector predictor實作
+
+3.每個entry裡有history(000)及state(SN)
+
+4.接著讀入test.txt，裡面是測試的指令
+
+5.所有指令存進map instructions
+
+6.PC預設為0x0000
+
+7.進入while迴圈
+
+8.按照PC指定entry
+
+9.印出當前的entry及instruction
+
+10.計算當前entry的history
+
+11.印出predictor裡的history及state
+
+12.依照predictor裡的特定history，做出預測並印出
+
+13.接著依照PC的case判斷branch是否會發生並印出
+
+14.接著判斷預測與實際狀況是否相同(Prediction==Outcome)
+
+15.若不相同則更新predictor裡的state
+
+16.misprediction變數加一並印出
+
+17.把Outcome加進predictor裡的history
+
+18.接著 PC+4
+
+19.進行下一次迴圈
+
+20.直到branch End發生，結束程式
